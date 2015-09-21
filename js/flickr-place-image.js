@@ -1,8 +1,9 @@
 var placeImage = {
-	key:     '1bed842637720a719b5ac90bcca6133c',
-	baseUrl: 'https://api.flickr.com/services/rest/?',
-	format:  'json',
-	method:  'flickr.photos.search',
+	key:        '1bed842637720a719b5ac90bcca6133c',
+	baseUrl:    'https://api.flickr.com/services/rest/?',
+	format:     'json',
+	safeSearch: '1',
+	method:     'flickr.photos.search',
 
 	getPhotos: function() {
 		var _this = this;
@@ -34,6 +35,7 @@ var placeImage = {
 				+ 'method=' + this.method 
 				+ '&api_key=' + this.key 
 				+ '&format=' + this.format
+				+ '&safe_search=' + this.safeSearch
 				+ '&tags=' + tags;
 	},
 
