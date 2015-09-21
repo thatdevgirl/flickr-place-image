@@ -7,7 +7,7 @@ var placeImage = {
 	getPhotos: function() {
 		var _this = this;
 
-		$('img.placeImage').each(function() {
+		$('img.placeholder').each(function() {
 			// Get the tag(s) for this placeholder image.
 			var tags = $(this).data('tags');
 
