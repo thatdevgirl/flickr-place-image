@@ -1,62 +1,62 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-<head>
-	<title>Flickr Place Image</title>
-</head>
+  <head>
+  <title>Flickr Place Image</title>
+  </head>
 
-<body>
+  <body>
     <h1>Flickr Place Image</h1>
 
     <p>This is a quick and dirty script that uses the Flickr API to provide placeholder images for web developers and designers.  All images are public Flickr user images.  Please do not use these images for any sort of production or public usage without permission from the image owner.</p>
 
     <p>The code for this project is all in a <a href="https://github.com/thatdevgirl/flickr-place-image/">GitHub repository</a>.  Feel free to fork or clone this project as needed.</p>
     <h2>Usage</h2>
-    
+
     <ol>
-        <li>
-            jQuery is required.  <i>(Sorry folks! Some day I will refactor this to not require jQuery, but, as stated above, this is a quick and dirty script.)</i>
-            <br /><br />
-        </li>
-        
-        <li>
-            Include the <code>flickr-place-image.js</code> file in the <code>/js/</code> library somewhere on your page.
-            <br /><br />
-        </li>
-        
-        <li>
-            Place the following code anywhere on your site where you require a placeholder image:
-            <br />
-            <code>&lt;img src="" class="placeholder" data-tags="comma,separated,tags" /&gt;</code>
-        </li>
+      <li>
+        jQuery is required.  <i>(Sorry folks! Some day I will refactor this to not require jQuery, but, as stated above, this is a quick and dirty script.)</i>
+        <br /><br />
+      </li>
+
+      <li>
+        Include the <code>flickr-place-image.js</code> file in the <code>/js/</code> library somewhere on your page.
+        <br /><br />
+      </li>
+
+      <li>
+        Place the following code anywhere on your site where you require a placeholder image:
+        <br />
+        <code>&lt;img src="" class="placeholder" data-tags="comma,separated,tags" /&gt;</code>
+      </li>
     </ol>
 
     <h3>Required Attributes:</h3>
 
     <ul>
-        <li>
-            <b>class</b>: The "placeholder" class is required; this class is how the script identifies where placeholder images go.
-            <br /><br />
-        </li>
+      <li>
+        <b>class</b>: The "placeholder" class is required; this class is how the script identifies where placeholder images go.
+        <br /><br />
+      </li>
 
-        <li>
-            <b>data-tags</b>: A comma-separated list of tags that is used to search for public images on Flickr.
-            <br /><br />
-        </li>
+      <li>
+        <b>data-tags</b>: A comma-separated list of tags that is used to search for public images on Flickr.
+        <br /><br />
+      </li>
     </ul>
 
     <h2>Examples</h2>
 
     <p>This is an example of a placeholder image of a cat.</p>
-    <p><img src="" class="placeholder" data-tags="cats, kittens" width="300" /></p>
+    <!-- <p><img src="" class="placeholder" data-tags="cats, kittens" width="300" /></p> -->
 
     <br />
 
     <p>This is an example of a placeholder image of a building.</p>
     <p><img src="" class="placeholder" data-tags="building" width="300" /></p>
 
-    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="js/flickr-place-image.js"></script>
-</body>
+  </body>
 
 </html>
